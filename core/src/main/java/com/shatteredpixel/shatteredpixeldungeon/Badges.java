@@ -147,7 +147,10 @@ public class Badges {
 		//diamond
 		GAMES_PLAYED_4              ( 112, true ),
 		CHAMPION_2                  ( 113 ),
-		CHAMPION_3                  ( 114 );
+		CHAMPION_3                  ( 114 ),
+
+		// test
+		TEST_BADGE					(1);
 
 		public boolean meta;
 
