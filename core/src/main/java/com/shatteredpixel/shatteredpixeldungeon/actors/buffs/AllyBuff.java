@@ -35,6 +35,7 @@ public abstract class AllyBuff extends Buff{
 			if (droppingLoot) enemy.rollToDropLoot();
 			Statistics.enemiesSlain++;
 			Badges.validateMonstersSlain();
+			Badges.validateTest();
 			Statistics.qualifiedForNoKilling = false;
 			if (enemy.EXP > 0 && hero.lvl <= enemy.maxLvl) {
 				hero.sprite.showStatus(CharSprite.POSITIVE, Messages.get(enemy, "exp", enemy.EXP));

@@ -279,6 +279,16 @@ public class Badges {
 		else        return Badges.local.size();
 	}
 
+	public static void validateTest() {
+		Badge badge = null;
+
+		if (!local.contains( Badge.TEST_BADGE ) && Statistics.enemiesSlain >= 0) {
+			badge = Badge.TEST_BADGE;
+			local.add( badge );
+		}
+		displayBadge( badge );
+	}
+
 	public static void validateMonstersSlain() {
 		Badge badge = null;
 		
